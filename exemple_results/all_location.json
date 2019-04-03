@@ -1,0 +1,28 @@
+{
+    "data" : [
+    {
+        "id_sede": "2",
+        "nome_sede": "Centro Santagata",
+        "luogo_sede": "Milano",
+        "img": "https://giosch.github.io/careCenter/assets/img/locations/1.jpg",
+        "descrizione": "Il centro Policlinico Santagata è un Polo Commerciale Integrato: un ponte di collegamento unisce l'area ludico-intrattenitiva all’area commerciale, dando vita a una struttura con ampia offerta di servizi, luogo ideale per trascorrere il proprio tempo libero. Ideale per trascorrere un pomeriggio all’insegna del divertimento, il centro Multibit rappresenta il perfetto punto di incontro per te e i tuoi amici."
+    }, {
+        "id_sede": "3",
+        "nome_sede": "Centro Casinata",
+        "luogo_sede": "Torino",
+        "img": "https://giosch.github.io/careCenter/assets/img/locations/2.jpg",
+        "descrizione": "Il centro Policlinico Santagata è un Polo Commerciale Integrato: un ponte di collegamento unisce l'area ludico-intrattenitiva all’area commerciale, dando vita a una struttura con ampia offerta di servizi, luogo ideale per trascorrere il proprio tempo libero. Ideale per trascorrere un pomeriggio all’insegna del divertimento, il centro Multibit rappresenta il perfetto punto di incontro per te e i tuoi amici."
+    }, {
+        "id_sede": "4",
+        "nome_sede": "Centro Berletta",
+        "luogo_sede": "Venezia",
+        "img": "https://giosch.github.io/careCenter/assets/img/locations/3.jpg",
+        "descrizione": "Il centro Policlinico Santagata è un Polo Commerciale Integrato: un ponte di collegamento unisce l'area ludico-intrattenitiva all’area commerciale, dando vita a una struttura con ampia offerta di servizi, luogo ideale per trascorrere il proprio tempo libero. Ideale per trascorrere un pomeriggio all’insegna del divertimento, il centro Multibit rappresenta il perfetto punto di incontro per te e i tuoi amici."
+    }, {
+        "id_sede": "5",
+        "nome_sede": "Centro Speciale",
+        "luogo_sede": "Milano",
+        "img": "https://giosch.github.io/careCenter/assets/img/locations/4.jpg",
+        "descrizione": "Il centro Policlinico Santagata è un Polo Commerciale Integrato: un ponte di collegamento unisce l'area ludico-intrattenitiva all’area commerciale, dando vita a una struttura con ampia offerta di servizi, luogo ideale per trascorrere il proprio tempo libero. Ideale per trascorrere un pomeriggio all’insegna del divertimento, il centro Multibit rappresenta il perfetto punto di incontro per te e i tuoi amici."
+    }]
+}

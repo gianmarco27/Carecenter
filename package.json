@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "",
+  "author": "3 people",
+  "engines": {
+    "node": "8.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "1.17.1",
+    "express": "4.15.2",
+    "knex": "0.13.0",
+    "lodash": "4.17.4",
+    "pg": "6.2.3",
+    "sqlite3": "^3.1.8"
+  },
+  "scripts": {
+    "start": "node ./index.js"
+  }
+}

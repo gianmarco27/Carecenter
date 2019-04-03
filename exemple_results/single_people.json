@@ -1,0 +1,25 @@
+{
+  "id_persona": "1",
+  "nome_cognome": "Danilo Ciarletti",
+  "img": "https://giosch.github.io/careCenter/assets/img/staff/ciarletti.jpg",
+  "servizi": [
+    {
+      "id_servizio": "1",
+      "nome_servizio": "Ludoteca Assistita"
+    }
+  ],
+  "sedi": [
+    {
+      "id_sede": "1",
+      "nome_sede": "Centro di Cura Diurno Boffetti",
+      "luogo_sede": "Venezia"
+    },
+    {
+      "id_sede": "2",
+      "nome_sede": "Centro Santagata",
+      "luogo_sede": "Milano"
+    }
+  ],
+  "bio": "Nato il 25 Frebbraio del 1957, Il Dottor Danilo Ciarletti è laureato in Psicopedagogia applicata al gioco. Specializzato in terapie socialmente riabilitative nei soggetti di giovani età.",
+  "desc_compiti": "Il Dottor Danilo Ciarletti è il responsabile dei servizi di Ludoteca assistita. La principale filosifia del Dottore è di insengare e imparare tramite il gioco. Non importa se il trattamento debba riguardare un analisi psicologica del paziente o un trattamento a livello articolatorio, il gioco rende più appetibile l'intera procedura, soprattutto a pazienti con disabilità cognitive gravi."
+}

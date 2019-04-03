@@ -1,0 +1,23 @@
+{
+    "data" : [{
+      "id_persona": "1",
+      "nome_cognome": "Danilo Ciarletti",
+      "img": "https://giosch.github.io/careCenter/assets/img/staff/giada.jpg"
+    }, {
+      "id_persona": "2",
+      "nome_cognome": "Chiara DeAngelis",
+      "img": "https://giosch.github.io/careCenter/assets/img/staff/ciarletti.jpg"
+    }, {
+      "id_persona": "3",
+      "nome_cognome": "Mirco Maglino",
+      "img": "https://giosch.github.io/careCenter/assets/img/staff/toby.jpg"
+    }, {
+      "id_persona": "4",
+      "nome_cognome": "Danilo Ciarletti",
+      "img": "https://giosch.github.io/careCenter/assets/img/staff/matteo.jpg"
+    }, {
+      "id_persona": "5",
+      "nome_cognome": "Danilo Ciarletti",
+      "img": "https://giosch.github.io/careCenter/assets/img/staff/ciarletti.jpg"
+    }]
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CareCenter è un associazione Italiana che si occupa di tematiche relative l'assistenza di bambini con disabilità">
+    <meta name="author" content="Federico Scloza, Gianmarco Poggi e Giovanni Schiavon">
+    <title>Nome servizio | CareCenter</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/main.css" type="text/css" >
+
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+</head><!--/head-->
+
+
+<body>
+    <nav class="navbar navbar-expand-lg wet-asphalt" role="banner">
+        <div class="container">
+            <a href="../index.html"><h1 class="mb-1">CareCenter</h1></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars wet-asphalt"></i>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/about_us.html">Chi Siamo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/all_services.html">Servizi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/all_locations.html">Sedi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/404.html">Eventi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/all_people.html">Staff</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/404.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/404.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/contact-us.html">Contatti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/404.html">Aiutaci</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!--/navbar-->
+  <section id="service" class="pt-3 pb-0">
+        <div  class="container">
+            <div class="col-12 pull-left">
+                <a href="/pages/all_services.html" class="allcategory">> Tutti i servizi</a>
+            </div>
+            <div class = "col-12 center mx-auto py-2">
+            <img id="foto" alt="Foto attività" class="img-responsive mw-100">
+            </div>
+            <div class="center">
+                  <h2 id="nome_servizio">Nome servizio</h2>
+                <p id="introduzione">Testo 1</p>
+                <hr class="my-4">
+                <p id="descrizione">Testo 2</p>
+            </div>
+        </div>
+    </section>   <!-- /service -->
+        <hr class="mx-5 mt-4">
+    <section id="relations" class="p-1">
+        <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 center">
+                        <h4>Dove</h4>
+                        <div id="sedi">
+                        </div>
+                  </div><!--/.col-sm-4-->
+                  <div class="col-sm-6 center">
+                        <h4>Responsabile</h4>
+                        <div id="responsabili">
+
+                        </div>
+                    </div><!--/.col-sm-4-->
+                </div>
+        </div>
+    </section> <!-- /relations -->
+    <section class="mt-md-0 mt-4">
+        <footer id="footer" class="wet-asphalt">
+            <div class="footer container">
+                <div class="row">
+                    <div class="col-6 mb-0">
+                        &copy; 2018 CareCenter. P.IVA 123456789012345
+                    </div>
+                    <div class="col-6 mb-0">
+                        <ul class="float-right">
+                            <li><a href="/pages/about_us.html">About Us</a></li>
+                            <li><a href="/pages/404.html">Faq</a></li>
+                            <li><a href="/pages/contact-us.html">Contatti</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->
+    </section>
+    <script src="/assets/js/getdata.js"></script>
+    <script>
+
+      window.onhashchange = function() {
+        window.location.reload();
+      };
+
+      craftRequest();
+
+      function craftRequest() {
+        if (window.location.hash) { // There is a ID specified
+          let query = window.location.hash.substr(1);
+          let data_url = "/api/services/" + query;
+          getData(data_url, insertDataService);
+        } else { // Redirect
+            // Avoided window.location.href so user don't get stuck if they try to go back
+            window.location.replace("/pages/all_services.html");
+         }
+      }
+
+
+
+      function insertDataService(data) {
+
+            document.getElementById("nome_servizio").innerHTML = data["nome_servizio"];
+
+            document.getElementById("introduzione").innerHTML = data["introduzione"];
+
+            document.getElementById("descrizione").innerHTML = data["descrizione"];
+
+            document.getElementById("foto").src = data["img"];
+
+            document.title = data["nome_servizio"] + " | " + "careCenter";
+
+            let responsabili = document.getElementById("responsabili");
+            data["staff"].forEach( function(el) {
+                let responsabile_btn = document.createElement('li')
+                responsabile_btn.className = "btn d-block"
+                let responsabile = document.createElement('a');
+                responsabile.href = "/pages/single_people.html#" + el['id_persona'];
+                responsabile.innerHTML = el["nome_cognome"];
+                responsabile_btn.append(responsabile);
+                responsabili.append(responsabile_btn);
+            });
+
+            let sedi = document.getElementById("sedi");
+            data["sede"].forEach( function(el) {
+                let sede_btn = document.createElement('li')
+                sede_btn.className = "btn d-block"
+                let sede = document.createElement('a');
+                sede.href = "/pages/location.html#" + el['id_sede'];
+                sede.innerHTML = el['nome_sede'] + " | " + el["luogo_sede"];
+                sede_btn.append(sede);
+                sedi.append(sede_btn);
+            });
+
+
+        }
+    </script>
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+    "data" : [
+    {
+    "id_servizio" : "1",
+    "nome_servizio" : "Ludoteca Assistita",
+    "img" : "https://giosch.github.io/careCenter/assets/img/attivita/ludoteca.jpg",
+    "sede" : [
+        {
+            "luogo_sede" : "Venezia"
+        }, {
+            "luogo_sede" : "Milano"
+        }
+    ],
+    "introduzione" : "La Ludoteca assistita è un laboratorio ludico tenuto da massimi esperti di pedagogia nel quale essi tentano, attraversio il gioco ad entrare in relazione con il paziente, grande o piccolo che sia."
+}, {
+    "id_servizio" : "2",
+    "nome_servizio" : "Ludoteca Assistita",
+    "img" : "https://giosch.github.io/careCenter/assets/img/attivita/ludoteca.jpg",
+    "sede" : [
+        {
+            "luogo_sede" : "Roma"
+        }, {
+            "luogo_sede" : "Torino"
+        }
+    ],
+    "introduzione" : "La Ludoteca assistita è un laboratorio ludico tenuto da massimi esperti di pedagogia nel quale essi tentano, attraversio il gioco ad entrare in relazione con il paziente, grande o piccolo che sia."
+}, {
+    "id_servizio" : "3",
+    "nome_servizio" : "Ludoteca Assistita",
+    "img" : "https://giosch.github.io/careCenter/assets/img/attivita/ludoteca.jpg",
+    "sede" : [
+        {
+            "luogo_sede" : "Venezia"
+        }, {
+            "luogo_sede" : "Torino"
+        }
+    ],
+    "introduzione" : "La Ludoteca assistita è un laboratorio ludico tenuto da massimi esperti di pedagogia nel quale essi tentano, attraversio il gioco ad entrare in relazione con il paziente, grande o piccolo che sia."
+}, {
+    "id_servizio" : "4",
+    "nome_servizio" : "Ludoteca Assistita",
+    "img" : "https://giosch.github.io/careCenter/assets/img/attivita/ludoteca.jpg",
+    "sede" : [
+        {
+            "luogo_sede" : "Venezia"
+        }, {
+            "luogo_sede" : "Genova"
+        }
+    ],
+    "introduzione" : "La Ludoteca assistita è un laboratorio ludico tenuto da massimi esperti di pedagogia nel quale essi tentano, attraversio il gioco ad entrare in relazione con il paziente, grande o piccolo che sia."
+}, {
+    "id_servizio" : "5",
+    "nome_servizio" : "Ludoteca Assistita",
+    "img" : "https://giosch.github.io/careCenter/assets/img/attivita/ludoteca.jpg",
+    "sede" : [
+        {
+            "luogo_sede" : "Bergamo"
+        }, {
+            "luogo_sede" : "Torino"
+        }
+    ],
+    "introduzione" : "La Ludoteca assistita è un laboratorio ludico tenuto da massimi esperti di pedagogia nel quale essi tentano, attraversio il gioco ad entrare in relazione con il paziente, grande o piccolo che sia."
+    }
+]
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CareCenter è un associazione Italiana che si occupa di tematiche relative l'assistenza di bambini con disabilità">
+    <meta name="author" content="Federico Scloza, Gianmarco Poggi e Giovanni Schiavon">
+    <title>Home | CareCenter</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/main.css" type="text/css" >
+       
+    <link rel="shortcut icon" href="../assets/img/favicon.ico">
+        
+</head><!--/head-->
+    
+    
+<body>
+    <nav class="navbar navbar-expand-lg wet-asphalt" role="banner">
+        <div class="container">   
+            <a href="../index.html"><h1 class="mb-1">CareCenter</h1></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars wet-asphalt"></i>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about_us.html">Chi Siamo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./all_services.html">Servizi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./all_locations.html">Sedi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./404.html">Eventi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./all_people.html">Staff</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./404.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./404.html">News</a></li> 
+                    <li class="nav-item current"><a class="nav-link" href="./contact-us.html">Contatti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./404.html">Aiutaci</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!--/navbar-->
+
+    <section id="contact-page" class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>I nostri recapiti</h4>
+                <div id="tel">
+                    <h6> <i class="fas fa-phone"></i> Numero di Telefono</h6>
+                </div>
+                <div id="mail">
+                    <h6> <i class="fas fa-envelope"></i> Contatti e-M@il</h6>
+                </div>
+                <div id="orari">
+                    <h6> <i class="fas fa-clock"></i> I nostri Orari</h6>
+                </div>
+                <div id="segreteria">
+                    <h6> <i class="fas fa-map-marker"></i> Segreteria</h6>
+                </div>
+            </div><!--/.col-sm-4-->
+            <div class="col-sm-6">
+                <h4>Contattaci</h4>
+                <form id="main-contact-form" class="contact-form" name="contact-form" role="form">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" required="required" placeholder="Nome">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" required="required" placeholder="Cognome">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" required="required" placeholder="Indirizzo Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Messaggio"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg">Invia Messaggio</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div><!--/.col-sm-8-->
+        </div>
+    </section><!--/#contact-page-->
+    <section class="mt-md-0 mt-4">
+        <footer id="footer" class="wet-asphalt">
+            <div class="footer container">
+                <div class="row">
+                    <div class="col-6 mb-0">
+                        &copy; 2018 CareCenter. P.IVA 123456789012345
+                    </div>
+                    <div class="col-6 mb-0">
+                        <ul class="float-right">
+                            <li><a href="./about_us.html">About Us</a></li>
+                            <li><a href="./404.html">Faq</a></li>
+                            <li><a href="./contact-us.html">Contatti</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->
+    </section>
+    <script>
+    let data_url = "/copy/contact_us";
+    
+    //console.log(data_url)
+      
+    fetch(data_url)
+        .then(res => res.json())
+        .then((out) => {
+            let nTel = document.createElement('p');
+            let mails = document.createElement('p');
+            let giorni = document.createElement('p');
+        
+            out["tel"].forEach(function(number){
+                let link = document.createElement('a');
+                link.href = "tel:" + number;
+                link.innerHTML = number + "</br>";
+                nTel.append(link);
+            });
+        
+            out["mail"].forEach(function(email){
+                let link = document.createElement('a');
+                let ref = "mailto:" + email;
+                link.href = ref;
+                link.innerHTML = email + "</br>";
+                mails.append(link);
+            });
+        
+            out["orari"].forEach(function(orario){
+                let line = document.createElement('span');
+                line.innerHTML = orario + "</br>";
+                giorni.append(line);
+            });
+            let segreteria = document.createElement('p');
+            segreteria.innerHTML = out["indirizzo"];
+            document.getElementById("tel").append(nTel);
+            document.getElementById("mail").append(mails);
+            document.getElementById("orari").append(giorni);
+            document.getElementById("segreteria").append(segreteria);
+        })
+        .catch(err => { throw err });  
+        
+    </script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    </body>
+</html>

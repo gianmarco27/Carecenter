@@ -1,0 +1,310 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+body {
+    color: #34495e;
+    background: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+a {
+  color: #34495e;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+hr {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #fff;
+}
+.btn {
+  font-weight: 400;
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.2rem !important;
+}
+a:hover,
+a:focus {
+  color: #d9534f;
+  text-decoration: none;
+  outline: none;
+}
+.dropdown-menu {
+  margin-top: -1px;
+  min-width: 180px;
+}
+body > section {
+  padding: 50px 0;
+}
+.orange,
+.wet-asphalt,
+.midnight-blue,
+.orange h1,
+.wet-asphalt h1,
+.midnight-blue h1,
+.orange h2,
+.wet-asphalt h2,
+.midnight-blue h2,
+.orange h3,
+.wet-asphalt h3,
+.midnight-blue h3,
+.orange h4,
+.wet-asphalt h4,
+.midnight-blue h4,
+.orange h5,
+.wet-asphalt h5,
+.midnight-blue h5,
+.orange h6,
+.wet-asphalt h6,
+.midnight-blue h6{
+  color: #fff;
+}
+.orange small,
+.wet-asphalt small,
+.midnight-blue small{
+  color: rgba(255, 255, 255, 0.8);
+}
+.orange {
+  background-color: #f39c12;
+}
+.wet-asphalt {
+  background-color: #34495e;
+}
+.wet-asphalt a:not(.btn) {
+  color: #bdc3c7;
+}
+.wet-asphalt a:not(.btn):hover {
+  color: #d9534f;
+}
+.midnight-blue {
+  background-color: #2c3e50;
+}
+#slider {
+  position: relative;
+}
+#slider .carousel h2 {
+  font-size: 36px;
+}
+#slider .carousel .btn {
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border-radius: 0;
+  margin-top: 5px;
+}
+#slider .carousel .btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#slider .carousel .boxed {
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+}
+#slider .carousel .item {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0 !important;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block !important;
+  height: 600px;
+  -webkit-transition: opacity ease-in-out 500ms;
+  -moz-transition: opacity ease-in-out 500ms;
+  -o-transition: opacity ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms;
+}
+#slider .carousel .item:first-child {
+  top: auto;
+  position: relative;
+}
+#slider .carousel .item.active {
+  opacity: 1;
+  -webkit-transition: opacity ease-in-out 500ms;
+  -moz-transition: opacity ease-in-out 500ms;
+  -o-transition: opacity ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms;
+  z-index: 1;
+}
+#slider .prev,
+#slider .next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  display: inline-block;
+  margin-top: -25px;
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  z-index: 5;
+}
+#slider .prev:hover,
+#slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+#slider .prev {
+  left: 10px;
+}
+#slider .next {
+  right: 10px;
+}
+#slider .active .animation.animated-item-1 {
+  -webkit-animation: fadeInUp 300ms linear 300ms both;
+  -moz-animation: fadeInUp 300ms linear 300ms both;
+  -o-animation: fadeInUp 300ms linear 300ms both;
+  -ms-animation: fadeInUp 300ms linear 300ms both;
+  animation: fadeInUp 300ms linear 300ms both;
+}
+#slider .active .animation.animated-item-2 {
+  -webkit-animation: fadeInUp 300ms linear 600ms both;
+  -moz-animation: fadeInUp 300ms linear 600ms both;
+  -o-animation: fadeInUp 300ms linear 600ms both;
+  -ms-animation: fadeInUp 300ms linear 600ms both;
+  animation: fadeInUp 300ms linear 600ms both;
+}
+#slider .active .animation.animated-item-3 {
+  -webkit-animation: fadeInUp 300ms linear 900ms both;
+  -moz-animation: fadeInUp 300ms linear 900ms both;
+  -o-animation: fadeInUp 300ms linear 900ms both;
+  -ms-animation: fadeInUp 300ms linear 900ms both;
+  animation: fadeInUp 300ms linear 900ms both;
+}
+#slider .active .animation.animated-item-4 {
+  -webkit-animation: fadeInUp 300ms linear 1200ms both;
+  -moz-animation: fadeInUp 300ms linear 1200ms both;
+  -o-animation: fadeInUp 300ms linear 1200ms both;
+  -ms-animation: fadeInUp 300ms linear 1200ms both;
+  animation: fadeInUp 300ms linear 1200ms both;
+}
+#title h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 300;
+}
+.center {
+  text-align: center;
+}
+.row > div {
+  margin-bottom: 10px;
+}
+ul.unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*Unordered Lists*/
+#footer {
+    border-top: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#footer a {
+  color: #bdc3c7;
+}
+#footer a:hover {
+  color: #d9534f;
+}
+#footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer ul > li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.card {
+    width: 18rem;
+    
+}
+.cardfilter {
+    margin: 0 auto;
+}
+.current{
+    border-bottom: 0.3rem solid orange !important;
+    margin-bottom: -0.9rem !important; 
+}
+.current .nav-link {
+    color: white !important;
+}
+.cyan {
+    background: #178CCB;  
+    color: white
+}
+.current-button {
+    background-color: #FBCCA7;
+}
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+.wrapperino {
+    padding: 10px;
+}
+.allcategory {
+    font-size: 110%;
+    font-weight: 400;
+}
+@media (max-width: 992px){
+    .current{
+    padding-bottom: 0.4rem !important;
+    margin-bottom: 0.2rem !important;
+    }
+}

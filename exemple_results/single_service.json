@@ -1,0 +1,24 @@
+{
+    "id_servizio" : "1",
+    "nome_servizio" : "Ludoteca Assistita",
+    "img" : "https://giosch.github.io/careCenter/assets/img/attivita/ludoteca.jpg",
+    "sede" : [
+        {
+            "id_sede" : "1",
+            "nome_sede" : "Centro di Cura Diurno Boffetti",
+            "luogo_sede" : "Venezia"
+        }, {
+            "id_sede" : "2",
+            "nome_sede" : "Centro Santagata",
+            "luogo_sede" : "Milano"
+        }
+    ],
+    "staff" : [
+        {
+            "id_persona" : "1",
+            "nome_cognome" : "Danilo Ciarletti"
+        }
+    ],
+    "introduzione" : "La Ludoteca assistita è un laboratorio ludico tenuto da massimi esperti di pedagogia nel quale essi tentano, attraversio il gioco ad entrare in relazione con il paziente, grande o piccolo che sia.",
+    "descrizione" : "Attività storica e tradizionale di molti nostri centri, riscuote sempre un grande successo, e un riscontro tangibile nel comportamento dei pazienti che risultano più attivi e empatici. Ovviamente divertente, questa attività ha però come principale uso la valutazione psicopedagogica delle facoltà mentali del paziente, mentre interagisce con un ambiente non-ostile."
+}

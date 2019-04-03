@@ -1,0 +1,21 @@
+{
+	"homepage": {
+		"intro": "CareCenter è una Cooperativa Sociale Onlus che opera in varie regioni italiane con Servizi dedicati ai bisogni delle persone con disabilità, rivolgendo attenzione ai temi dell’adolescenza, promuovendo studi e realizzando nuove opportunità per persone con fragilità e disagio psico-sociale."
+	},
+	"about_us": {
+		"chi_siamo": "CareCenter si propone di migliorare la qualità della vita di bambini con disagio psicofisico in Italia e nel mondo, favorendo con ogni mezzo la loro cura, la loro assistenza e la loro integrazione in famiglia e nella società.\nPer raggiungere questo obiettivo si avvale dei Centri operativi omonimi e del contributo clinico di professionisti specializzati nelle problematiche legate all’età evolutiva.\nCareCenter è un ente no-profit riconosciuta in tutta Italia che si occupa di bambini con disagio psicofisico e gravi disabilità comunicative sostenendo le loro famiglie.\nOpera attraverso cinque centri operativi: a Milano, Torino, Roma, Genova e Venezia.\nDa oltre vent’anni la Fondazione promuove iniziative speciali per raccogliere fondi da destinare ad attività e servizi a favore dei bambini e delle loro famiglie.",
+		"our_story": "CareCenter nasce nell’ottobre del 1996 a Milano dall’iniziativa di un gruppo di genitori di bambini con disabilità e di operatori.\nDa allora lavora per costruire opportunità di benessere per il bambino con disabilità, offrire un sostegno competente ai suoi genitori e promuovere una cultura più attenta ai diritti del bambino con disabilità."
+	},
+    "all_locations" : {
+        "intro" : "Qui potete trovare le informazioni riguardanti le nostre strutture, dalla storica sede a Milano, fino a quella all'avanguardia appena costruita a Torino. Dalla prima all'ultima rappresentano il connubio perfetto tra usabilità e clima di rilassamento."
+    },
+    "all_people" : {
+        "intro" : "Il nostro staff è stato selezionato fra i più eminenti experti del settore nel quale opera. Di seguito potete trovare informazioni riguardanti i principali capi reparto e managed delle varie equipes che gestisono i servizi erogati presso le nostre strutture."
+    },
+    "contact_us": {
+        "tel": ["+39 335-555-555 ", "+39 335-666-666"],
+        "mail": ["info@carecenter.it", "segreteria@carecenter.it"],
+        "orari": ["Lunedì - Venerdì dalle 8:00 alle 20:00", "Sabato dalle 9:00 alle 13:00"],
+        "indirizzo" : "Via Golgi 32, Milano 20032, IT"
+    }
+}
